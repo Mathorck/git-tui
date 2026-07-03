@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="GitTui/GitTui.csproj" />
+  <Project Path="GitTui.Generators/GitTui.Generators.csproj" />
 </Solution>

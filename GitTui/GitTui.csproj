@@ -4,6 +4,8 @@
         <OutputType>Exe</OutputType>
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
+        <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+        <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)Generated</CompilerGeneratedFilesOutputPath>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
@@ -12,13 +14,18 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Include="Ressources\Localization\**\*.xml">
+      <None Update="Ressources\Localization\**\*.xml">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
+      <AdditionalFiles Include="Ressources\Localization\lang.en.xml" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Models\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\GitTui.Generators\GitTui.Generators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
     </ItemGroup>
 
 </Project>
