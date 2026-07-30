@@ -1,4 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <traductions>
-    <trad name="MENU_FILE" content="_Fichiers"/>
+    <trad name="APP_TITLE" content="GitTui"/>
+
+    <trad name="MENU_FILE" content="_Fichier"/>
+    <trad name="MENU_FILE_OPEN_REPOSITORY" content="_Ouvrir un dépôt..."/>
+    <trad name="MENU_FILE_QUIT" content="_Quitter"/>
+
+    <trad name="MENU_REPOSITORY" content="_Dépôt"/>
+    <trad name="MENU_REPOSITORY_FETCH" content="_Fetch"/>
+    <trad name="MENU_REPOSITORY_PULL" content="_Pull"/>
+    <trad name="MENU_REPOSITORY_PUSH" content="_Push"/>
+    <trad name="MENU_REPOSITORY_REFRESH" content="_Actualiser"/>
+
+    <trad name="MENU_BRANCH" content="_Branche"/>
+    <trad name="MENU_BRANCH_SWITCH" content="_Changer / Créer une branche..."/>
+
+    <trad name="MENU_HELP" content="_Aide"/>
+    <trad name="MENU_HELP_ABOUT" content="À _propos"/>
+
+    <trad name="VIEW_CHANGES" content="Modifications"/>
+    <trad name="VIEW_HISTORY" content="Historique"/>
+
+    <trad name="CHANGES_STAGED_TITLE" content="Modifications indexées"/>
+    <trad name="CHANGES_UNSTAGED_TITLE" content="Modifications"/>
+    <trad name="CHANGES_DIFF_TITLE" content="Diff"/>
+    <trad name="CHANGES_STAGE_ALL" content="Tout indexer"/>
+    <trad name="CHANGES_UNSTAGE_ALL" content="Tout désindexer"/>
+    <trad name="CHANGES_STAGE_SELECTED" content="Indexer"/>
+    <trad name="CHANGES_UNSTAGE_SELECTED" content="Désindexer"/>
+    <trad name="CHANGES_DISCARD_SELECTED" content="Annuler"/>
+    <trad name="CHANGES_DISCARD_CONFIRM_TITLE" content="Annuler les modifications"/>
+    <trad name="CHANGES_DISCARD_CONFIRM_MESSAGE" content="Voulez-vous vraiment annuler les modifications de '{0}' ? Cette action est irréversible."/>
+    <trad name="CHANGES_COMMIT_SUMMARY_PLACEHOLDER" content="Résumé (obligatoire)"/>
+    <trad name="CHANGES_COMMIT_DESCRIPTION_PLACEHOLDER" content="Description"/>
+    <trad name="CHANGES_COMMIT_BUTTON" content="Valider sur '{0}'"/>
+    <trad name="CHANGES_NO_CHANGES" content="Aucune modification"/>
+    <trad name="CHANGES_EMPTY_DIFF" content="Sélectionnez un fichier pour voir son diff"/>
+
+    <trad name="HISTORY_COMMITS_TITLE" content="Commits"/>
+    <trad name="HISTORY_DETAILS_TITLE" content="Détails du commit"/>
+    <trad name="HISTORY_EMPTY" content="Aucun commit"/>
+
+    <trad name="BRANCH_DIALOG_TITLE" content="Branches"/>
+    <trad name="BRANCH_FILTER_PLACEHOLDER" content="Filtrer ou nom de la nouvelle branche"/>
+    <trad name="BRANCH_CHECKOUT" content="Basculer"/>
+    <trad name="BRANCH_NEW" content="Nouvelle branche"/>
+    <trad name="BRANCH_CANCEL" content="Annuler"/>
+    <trad name="BRANCH_CURRENT_SUFFIX" content=" (actuelle)"/>
+    <trad name="BRANCH_REMOTE_SUFFIX" content=" (distante)"/>
+
+    <trad name="STATUS_BRANCH_LABEL" content="Branche : {0}"/>
+    <trad name="STATUS_DETACHED_LABEL" content="Détaché à {0}"/>
+    <trad name="STATUS_AHEAD_BEHIND" content="^{0} v{1}"/>
+    <trad name="STATUS_CLEAN" content="Arbre de travail propre"/>
+    <trad name="STATUS_NOT_A_REPO" content="'{0}' n'est pas un dépôt Git."/>
+    <trad name="STATUS_BUSY" content="Traitement..."/>
+    <trad name="STATUS_READY" content="Prêt"/>
+
+    <trad name="DIALOG_OK" content="OK"/>
+    <trad name="DIALOG_CANCEL" content="Annuler"/>
+    <trad name="DIALOG_YES" content="Oui"/>
+    <trad name="DIALOG_NO" content="Non"/>
+    <trad name="DIALOG_ERROR_TITLE" content="Erreur"/>
+    <trad name="DIALOG_SUCCESS_TITLE" content="Succès"/>
+
+    <trad name="OPEN_REPOSITORY_TITLE" content="Ouvrir un dépôt"/>
+    <trad name="OPEN_REPOSITORY_PROMPT" content="Chemin vers un dépôt Git :"/>
+
+    <trad name="ABOUT_TITLE" content="À propos de GitTui"/>
+    <trad name="ABOUT_MESSAGE" content="GitTui - un client Git en terminal. Construit avec Terminal.Gui v2."/>
+
+    <trad name="FETCH_SUCCESS" content="Fetch terminé."/>
+    <trad name="PULL_SUCCESS" content="Pull terminé."/>
+    <trad name="PUSH_SUCCESS" content="Push terminé."/>
+    <trad name="COMMIT_SUCCESS" content="Commit créé."/>
 </traductions>
