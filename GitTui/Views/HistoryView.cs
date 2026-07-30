@@ -16,7 +16,7 @@ public class HistoryView : View
     private readonly ILocalizer _loc;
 
     private readonly ListView _commitList;
-    private readonly TextView _detailsView;
+    private readonly DiffTextView _detailsView;
 
     private List<CommitInfo> _commits = [];
 
@@ -49,7 +49,7 @@ public class HistoryView : View
             Width = Dim.Fill(),
             Height = Dim.Fill()
         };
-        _detailsView = new TextView { X = 0, Y = 0, Width = Dim.Fill(), Height = Dim.Fill(), ReadOnly = true };
+        _detailsView = new DiffTextView { X = 0, Y = 0, Width = Dim.Fill(), Height = Dim.Fill(), ReadOnly = true };
         detailsFrame.Add(_detailsView);
 
         Add(listFrame, detailsFrame);

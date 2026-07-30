@@ -17,7 +17,7 @@ public class ChangesView : View
 
     private readonly ListView _unstagedList;
     private readonly ListView _stagedList;
-    private readonly TextView _diffView;
+    private readonly DiffTextView _diffView;
     private readonly TextField _summaryField;
     private readonly TextView _descriptionView;
     private readonly Button _commitButton;
@@ -107,7 +107,7 @@ public class ChangesView : View
             Width = Dim.Fill(),
             Height = Dim.Fill()
         };
-        _diffView = new TextView { X = 0, Y = 0, Width = Dim.Fill(), Height = Dim.Fill(), ReadOnly = true };
+        _diffView = new DiffTextView { X = 0, Y = 0, Width = Dim.Fill(), Height = Dim.Fill(), ReadOnly = true };
         diffFrame.Add(_diffView);
 
         Add(leftPanel, diffFrame);
