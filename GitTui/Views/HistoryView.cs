@@ -3,6 +3,7 @@ using GitTui.Interfaces;
 using GitTui.Models;
 using GitTui.Utils;
 using Terminal.Gui.App;
+using Terminal.Gui.Drawing;
 using Terminal.Gui.ViewBase;
 using Terminal.Gui.Views;
 
@@ -79,7 +80,8 @@ public class HistoryView : View
 
         try
         {
-            _detailsView.Text = _git.GetCommitDiff(_commits[index.Value].Hash);
+            Terminal.Gui.Drawing.Attribute normal = _detailsView.GetScheme().GetAttributeForRole(VisualRole.Normal, null);
+            _detailsView.Load(DiffColorizer.Colorize(_git.GetCommitDiff(_commits[index.Value].Hash), normal));
         }
         catch (GitCommandException ex)
         {

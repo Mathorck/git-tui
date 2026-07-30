@@ -3,6 +3,7 @@ using GitTui.Interfaces;
 using GitTui.Models;
 using GitTui.Utils;
 using Terminal.Gui.App;
+using Terminal.Gui.Drawing;
 using Terminal.Gui.ViewBase;
 using Terminal.Gui.Views;
 
@@ -150,12 +151,18 @@ public class ChangesView : View
 
         try
         {
-            _diffView.Text = _git.GetDiff(entries[index.Value]);
+            SetDiffText(_git.GetDiff(entries[index.Value]));
         }
         catch (GitCommandException ex)
         {
             _diffView.Text = ex.Message;
         }
+    }
+
+    private void SetDiffText(string diff)
+    {
+        Terminal.Gui.Drawing.Attribute normal = _diffView.GetScheme().GetAttributeForRole(VisualRole.Normal, null);
+        _diffView.Load(DiffColorizer.Colorize(diff, normal));
     }
 
     private void ToggleUnstagedSelection()
